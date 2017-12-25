@@ -152,9 +152,13 @@ hr {
 	transform: rotateZ(30deg);
 }
 
+.right h2 {
+	margin-left: 5%;
+}
+
 .worksContents {
 	display: flex;
-	justify-content: center;
+	/*justify-content: center;*/
 	flex-wrap: wrap;
 }
 .worksContents .worksWrap {
@@ -171,7 +175,6 @@ hr {
 	position: relative;
 	padding-top: 80%;
 	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-	/*border: solid 1px rgba(0, 0, 0, 0.2);*/
 }
 
 .worksFig p {
@@ -208,7 +211,7 @@ hr {
 	height: 100%;
 	transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 	transform: translateX(0) translateY(0);
-	background-image: linear-gradient(to right, #457081 0%, #45B0DC 100%);
+	background-image: linear-gradient(to right, #528898 0%, #A0BEC6 100%);
 }
 
 .worksWrap:hover .worksFigInner:after {
@@ -221,4 +224,12 @@ hr {
 
 .worksFigInner.colorPink:after {
 	background-image: linear-gradient(to right, #F9A3A3 0%, #FBCCCC 100%)
+}
+
+.worksFigInner.colorGreen:after {
+	background-image: linear-gradient(to right, #30403F 0%, #8E9696 100%)
+}
+
+.worksFigInner.colorLightBlue:after {
+	background-image: linear-gradient(to right, #0086BE 0%, #73BDDB 100%)
 }
