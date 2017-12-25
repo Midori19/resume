@@ -95,6 +95,10 @@ p {
 	border-right: solid 2px #457081;
 }
 
+.left p {
+	text-align: left;
+}
+
 .listSkill {
 	display: flex;
 	flex-wrap: wrap;
