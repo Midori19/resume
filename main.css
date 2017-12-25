@@ -176,6 +176,9 @@ hr {
 	height: 100%;
 	z-index: 1;
 	background: #FFF;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
 }
 
 .worksWrap:hover .worksFigInner {
@@ -197,4 +200,8 @@ hr {
 
 .worksWrap:hover .worksFigInner:after {
 	transform: translateX(10px) translateY(10px);
+}
+
+.worksContents:nth-child(1) .worksWrap .worksFig .worksFigInner .worksImg {
+	background-position: 60% center;
 }
