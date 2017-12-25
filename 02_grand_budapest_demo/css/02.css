@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.slideWrapper {
+    width: 300px;
+    height: 30px;
+    bottom: 5%;
+    left: 50%;
+    position: absolute;
+    display: inline-block;
+    transform: translate(-50%);
+    overflow: hidden;
+    border: none;
+    border: 0;
+    z-index: 9999;
+    cursor: pointer;
+    box-shadow: 0px 5px 15px .5px rgba(0,0,0,0.3);
+}
+
+.slideWrapper:after {
+    font-family: 'Open Sans', sans-serif;
+    content: "CLICK";
+    position: absolute;
+    right: 4.8em;
+    color: rgba(0,0,0,0.5);
+    line-height: 30px;
+    letter-spacing: .5em;
+    font-size: .9em;
+    font-weight: 700;
+}
+
+.slideWrapper .slideLeft, .slideWrapper .slideRight {
+    border: 0;
+    width: 300px;
+    height: 31px;
+    position: absolute;
+    display: inline-block;
+    /*opacity: 0.8;*/
+}
+.slideWrapper .slideLeft {
+    background-color: #F9A3A3;
+    transform: translateX(-70%);
+    transition: ease-in-out 0.6s;
+    z-index: 9999;
+}
+.slideWrapper .slideRight {
+    background-color: #FFF;
+}
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+}
+.video .videoContent {
+    width: 100%;
+    height: 100%;
+}
+
+.video .videoCover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: transprent;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+.main {
+    width: 100%;
+    /*height: 3000px;*/
+    z-index: 999;
+    background-color: #FFF;
+    transition: ease-in-out 1.2s;
+    position: relative;
+    transform: translateX(-100%);
+    /*debug*/
+    /*transform: translateX(0);*/
+    /*display: flex;
+    justify-content: center;*/
+}
+
+/*     ////////////////////// Main //////////////////////     */
+
+.header {
+    width: 100%;
+    min-height: 560px;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.homeWrapper {
+    width: 100%;
+    height: calc(100vh - 20px);
+    cursor: pointer;
+    font-size: 0;
+}
+.homeWrapper .homeLeft {
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    transition: ease-in-out 0.4s;
+    /*background: url(http://www.delightfull.eu/blog/wp-content/uploads/3042014-poster-p-1-behind-the-scenes-of-the-oscar-nominated-production-design-of-the-grand-budapest-hotel.jpg) no-repeat;*/
+    background-size: cover; /* 設置 100% 在視窗寬度過大的情況下，圖片不會縮放 */
+    background-position: center; /* 搭配 background-size: 100% 使用，在 media width 超過 ____ 時設定; */
+    opacity: 0.9;
+}
+.homeWrapper .homeRight {
+    display: inline-block;
+    /*right: 0;*/
+    width: 50%;
+    height: 100%;
+    transition: ease-in-out 0.4s;
+    /*background: url(http://img.hypesphere.com/2014/06/60d69540-903c-11e3-bb98-cdfbeeb6e0ce_grandbudapesthotel_critics_gs.jpg) no-repeat;*/
+    background-size: cover; /* 設置 100% 在視窗寬度過大的情況下，圖片不會縮放 */
+    background-position: center top; /* 搭配 background-size: 100% 使用，在 media width 超過 ____ 時設定; */
+    opacity: 0.9;
+}
+
+.homeLeft:hover {
+    opacity: 0.8;
+}
+
+.homeRight:hover {
+    opacity: 0.8;
+}
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: .85;
+}
+
+.intro .introP {
+    position: absolute;
+    letter-spacing: .07em;
+    line-height: 1.7em;
+    font-size: 1.7em;
+    font-weight: 900;
+    overflow: hidden;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    padding-right: .7em;
+}
+
+.intro .introP:nth-child(1) {
+    color: #F9A3A3; /*#428095;*/
+    right: 0.3em;
+    bottom: 4em;
+}
+
+.intro .introP:nth-child(2) {
+    color: white;
+    right: 6.7em;
+    bottom: 2.7em;
+}
+
+.intro .introP p {
+    bottom: -1.7em;
+    transition: ease-in-out .7s;
+}
+
+.intro .introP:nth-child(2) p {
+    transition-delay: .3s;
+}
+
+.info {
+    width: 100%;
+    height: 1610px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.info .infoPwrapper {
+    position: absolute;
+    text-align: center;
+    left: 5%; /*5em*/
+    top: 7em;
+}
+
+.info .infoPwrapper:nth-child(2) {
+    left: 50%;
+    top: 40em;
+    width: 90%;
+    transform: translateX(-50%);
+}
+
+.info .infoPwrapper .infoP {
+    letter-spacing: .07em;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    font-weight: 900;
+    overflow: hidden;
+    color: rgba(0,0,0,0.6);
+    /*text-shadow: 3px 3px 5px rgba(0,0,0,0.2);*/
+    padding-right: .7em;
+}
+
+.info .infoPwrapper .infoP p {
+    bottom: -1.7em;
+    transition: ease-in-out .5s;
+}
+
+.info .infoPwrapper .infoP:nth-child(2) p {
+    transition-delay: .2s;
+}
+
+.info .infoPwrapper .infoP:nth-child(3) p {
+    transition-delay: .4s;
+}
+
+.info .infoPwrapper .infoP:nth-child(4) p {
+    transition-delay: .6s;
+}
+
+.info .infoImgOne {
+    position: absolute;
+    width: 480px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    right: 25%; /*12em*/
+    top: 15em;
+    transform: rotateX(5deg) rotateY(-15deg) rotateZ(5deg);
+    /* rotateX(-45deg) rotateY(45deg) rotateZ(45deg);*/
+    /* 反轉 rotateX(20deg) rotateY(-166deg) rotateZ(5deg) */
+    box-shadow: 25px 20px 20px rgba(0,0,0,0.4);
+    opacity: .8;
+}
+
+.info .infoImgTwo {
+    position: absolute;
+    left: 50%;
+    /*top: 53em;*/
+    /*width: 1000px;*/
+    /*height: 600px;*/
+    background-size: cover;
+    background-position: center;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.4);
+    margin-bottom: 7em;
+    transition: ease-out .2s;
+    opacity: .85;
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer p {
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 2em 0em 2em;
+    line-height: 30px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .info .infoPwrapper .infoP {
+        letter-spacing: .03em;
+        line-height: 1.5em;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .info .infoPwrapper {
+        top: 5em;
+        left: 50%;
+        width: 80%;
+        transform: translateX(-50%);
+    }
+    .info .infoImgOne {
+        left: 50%;
+        top: 15em;
+        transform: translateX(-50%);
+    }
+
+    .info .infoPwrapper .infoP {
+        padding: 0;
+        letter-spacing: .03em;
+        line-height: 1.5em;
+        font-size: 1em;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .header, .homeWrapper .homeLeft, .homeWrapper .homeRight, .intro {
+        height: 592px;
+        background-size: 256px 256px cover;
+        background-attachment: scroll;
+    }
+    .info .infoImgOne, .info .infoImgTwo {
+        background-size: 256px 256px cover;
+        background-attachment: scroll;
+    }
+}
