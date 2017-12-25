@@ -1,0 +1,488 @@
+* {
+	font-family: 'Open Sans', sans-serif, '微軟正黑體';
+	box-sizing: border-box;
+	position: relative;
+	user-select: none;
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/*.clearfix {
+	clear: both;
+}*/
+
+.navbar {
+	z-index: 1;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	position: fixed;
+	transition: ease-in-out .7s;
+	background-color: white;
+	opacity: .7;
+}
+
+.navbar .titleWidth {
+	width: 6em;
+	min-width: 90px;
+	font-size: 1em;
+	text-align: center;
+	
+	border-left: solid 0px #348cb2;
+    transition: ease-in-out 0.3s;
+}
+
+.navbar .titleWidth:hover {
+    border-left: solid 5px #348cb2;
+}
+
+.navbar .titleWidth a {
+	text-decoration: none;
+	padding: 1.2em;
+	transition: .7s;
+	color: rgb(57,69,75);
+}
+
+.navbarTop {
+	background-color: transparent;
+	opacity: 1;
+	z-index: -1;
+}
+
+.navbarTop .titleWidth a {
+	color: transparent;
+}
+
+#header {
+	width: 100%;
+}
+
+#header .pic {
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.7;
+}
+
+#header .headerCont {
+	bottom: .5em;
+	left: 0;
+	font-size: 2.5em;
+	font-weight: 900;
+	position: absolute;
+	color: rgba(255,255,255,0.8);
+	letter-spacing: 0.025em;
+	padding: 2em 1.5em 2em 1.5em;
+}
+
+#movieIntro {
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.7;
+}
+
+#movieIntro .left {
+	overflow: hidden;
+	position: absolute;
+	left: 0px;
+	top: 250px;
+	width: 50%;
+	height: 30em;
+	transition: 1.5s;
+	padding: 3.5em 2.5em 3.5em 2.5em;
+	background-color: rgba(255,255,255,0.95);
+}
+
+#movieIntro .left h1 {
+	font-size: 2.5em;
+	font-weight: 900;
+	color: rgb(57,69,75);
+	margin-bottom: 0.7em;
+}
+
+#movieIntro .left p {
+	color: rgb(57,69,75);
+	font-weight: 300;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	letter-spacing: 0.025em;
+}
+
+#movieIntro .inactive {
+	left: -50%;
+}
+
+#preview {
+	width: 100%;
+	height: 900px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	opacity: 0.7;
+	/*overflow: hidden;*/
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#preview .videoContainer {
+	width: 80%;
+	height: 80%;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px 0px;
+}
+
+#preview iframe {
+	width: 100%;
+	height: 100%;
+}
+
+#movieScene {
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    overflow: hidden;
+	opacity: 0.7;
+}
+
+#footer {
+	width: 100%;
+	height: 30px;
+	background-color: white;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	z-index: 99999999;
+}
+
+#footer p {
+	font-weight: 700;
+	color: rgba(0,0,0,0.6);
+	padding: 0em 2em 0em 2em;
+    line-height: 30px;
+}
+
+/*   ////////////////////////  bottom btn   /////////////////////////////////   */
+.wrapper {
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(255,255,255,0.3);
+    border: solid 1px white;
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    bottom: -1.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: ease-in-out .3s;
+    color: transparent;
+}
+
+/*.wrapper:hover {
+    width: 5.2em;
+    height: 5.2em;
+}
+*/
+.d {
+    bottom: -50em;
+    width: 100em;
+    height: 100em;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #799496;
+    display: flex;
+    justify-content: center;
+}
+
+.d:after {
+    position: absolute;
+    content: "Thirty-four-year-old Anders (Anders Danielsen Lie) is a fortunate, but deeply troubled man battling drug addiction. As part of his rehabilitation program, he is allowed to go into the city for a job interview, but instead uses the opportunity as a way to drift around and revisit old friends. The day grows increasingly difficult as he struggles to overcome personal demons and past ghosts for the chance at love and a new life. -- (C) Official Site";
+	color: white; /*rgba(255,255,255,0.9);*/
+    top: 25%;
+    /*transform: translateY(-50%);*/
+    width: 60%;
+    height: auto;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    position: absolute;
+}
+
+/*   ////////////////////////  bottom btn end  /////////////////////////////////   */
+
+/*   ///////////////////////////Carousel////////////////////////////   */
+
+#movieScene .carou {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+#movieScene .carou img{
+    width: 100%;
+    height: 100%;
+}
+
+#movieScene .carou {
+    -webkit-animation: round 25s linear infinite;
+            animation: round 25s linear infinite;
+}
+
+@keyframes round {
+    4% {
+        opacity: 1;
+        /* 0 - 1秒 淡入*/
+    }
+    20% {
+        opacity: 1;
+        /* 1- 5秒靜止*/
+    }
+    24% {
+        opacity: 0;
+        /* 5-6秒淡出*/
+    }
+}
+
+#movieScene .carou:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+#movieScene .carou:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+
+#movieScene .carou:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;
+}
+
+#movieScene .carou:nth-child(4) {
+    -webkit-animation-delay: 15s;
+            animation-delay: 15s;
+}
+
+#movieScene .carou:nth-child(5) {
+    -webkit-animation-delay: 20s;
+            animation-delay: 20s;
+}
+
+/*   ///////////////////////////Carousel end////////////////////////////   */
+
+#movieInfo {
+	width: 100%;
+	height: 1000px;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	opacity: 0.7;
+	overflow: hidden;
+}
+
+
+
+/* ////////////////////////////// media 1200px ////////////////////////////// */
+
+@media screen and (max-width: 1280px) {
+	#header .pic {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#header .headerCont {
+		/*display: none;*/
+		bottom: 0;
+		font-size: 2em;
+		font-weight: 900;
+		position: absolute;
+		color: rgba(255,255,255,0.8);
+		letter-spacing: 0.025em;
+		padding: .7em 1em .7em 1em;
+	}
+	#movieIntro {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+
+	#movieIntro .left {
+		top: 55px;
+	}
+
+	#movieIntro .left p {
+		letter-spacing: 0.01em;
+	}
+
+	#preview {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#movieScene {
+		height: 760px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#movieInfo {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+}
+/* ////////////////////////////// media 860px ////////////////////////////// */
+
+@media screen and (max-width: 860px) {
+
+    .navbar {
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+        transition: ease-in-out .7s;
+        background-color: white;
+        opacity: .7;
+    }
+
+    .navbar .titleWidth {
+        width: 6em;
+        min-width: 90px;
+        font-size: 1em;
+        text-align: center;
+        
+        border-left: solid 0px #348cb2;
+        transition: ease-in-out .7s;
+    }
+
+    .navbar .titleWidth:hover {
+        border-left: none;
+    }
+
+    .navbar .titleWidth a {
+        text-decoration: none;
+        padding: 1.2em;
+        transition: .7s;
+        color: rgb(57,69,75);
+    }
+
+    .navbarTop {
+        background-color: transparent;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .navbarTop .titleWidth a {
+        color: transparent;
+    }
+
+
+
+	#header .pic {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#header .headerCont {
+		display: none;
+	}
+	#movieIntro {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#preview {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#movieScene {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+	#movieInfo {
+		height: 592px;
+		background-size: 256px 256px cover;
+		background-attachment: scroll;
+	}
+
+	#movieIntro .left {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		top: 140px;
+		width: 80%;
+		height: 20em;
+		padding: 3.5em 2em 3.5em 2em;
+		background-color: rgba(255,255,255,0.8);
+	}
+
+	#movieIntro .left h1 {
+		font-size: 2.3em;
+		margin-top: -0.5em;
+	}
+
+	#movieIntro .left p {
+		font-size: 1.2em;
+		line-height: 1.5em;
+		letter-spacing: 0.015em;
+	}
+
+	#movieIntro .inactive {
+		left: initial;
+	}
+
+    .d {
+        bottom: -50em;
+        width: 90em;
+        height: 90em;
+        border-radius: 50%;
+        border: none;
+        color: white;
+        background-color: #799496;
+        display: flex;
+        justify-content: center;
+    }
+
+    .d:after {
+        position: absolute;
+        content: "Thirty-four-year-old Anders (Anders Danielsen Lie) is a fortunate, but deeply troubled man battling drug addiction. As part of his rehabilitation program, he is allowed to go into the city for a job interview, but instead uses the opportunity as a way to drift around and revisit old friends. The day grows increasingly difficult as he struggles to overcome personal demons and past ghosts for the chance at love and a new life. -- (C) Official Site";
+        color: white;
+        top: 20%;
+        width: 50%;
+        height: auto;
+        font-size: 1.1em;
+        line-height: 1.5em;
+        letter-spacing: 0.1em;
+        position: absolute;
+    }
+} 
