@@ -71,6 +71,9 @@ body {
     left: 0;
     top: 0;
     opacity: 0.9;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .video .videoContent {
     width: 100%;
