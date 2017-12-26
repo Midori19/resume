@@ -7,7 +7,7 @@ function onYouTubeIframeAPIReady() {
             rel: 0,
             loop: 1,
             start: 4,
-            autoplay: 1, // debug 寫完後刪除
+            autoplay: 1,
             controls: 0,
             showinfo: 0,
             autohide: 0,
@@ -22,8 +22,7 @@ function onYouTubeIframeAPIReady() {
     });
 }
 function onPlayerReady(event) {
-    event.target.playVideo(); // debug 寫完後刪除
-    // player.mute();
+    event.target.playVideo()
 }
 var done = false;
 
@@ -39,6 +38,12 @@ function pauseVideo() {
 function stopVideo() {
     player.stopVideo();
 }
+
+// var re = 0
+// if (re < 1) {
+//     location.reload()
+//     re++
+// }
 
 {
     $(document).ready(function() {
