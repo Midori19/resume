@@ -294,11 +294,19 @@ body {
             left: 0;
             top: 0;
             transition: ease .7s;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            justify-content: center;
+            -ms-align-items: center;
+            align-items: center;
         }
-        .three .inner .features .image:nth-child(1):hover {
+        .three .inner .features .image:hover {
             background-color: rgba(0,0,0,0.5);
         }
-        .three .inner .features h3 {
+        .three .inner .features .image h3 {
             color: rgba(255,255,255,0.9);
             font-size: 1.25rem;
             font-weight: 800;
