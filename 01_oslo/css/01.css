@@ -303,7 +303,7 @@ html, body {
 
 /* ////////////////////////////// media 1200px ////////////////////////////// */
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 781px) and (max-width: 1280px) {
 	#header {
 		height: 592px;
 		background-size: 256px 256px cover;
@@ -336,7 +336,7 @@ html, body {
 		background-size: 256px 256px cover;
 	}
 	#movieScene {
-		height: 760px;
+		height: 100vh;
 		background-size: 256px 256px cover;
 	}
 	#movieInfo {
@@ -346,7 +346,7 @@ html, body {
 }
 /* ////////////////////////////// media 860px ////////////////////////////// */
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 768px) {
 
     .navbar {
         z-index: 1;
