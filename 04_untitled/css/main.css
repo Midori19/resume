@@ -222,7 +222,15 @@ body {
 
 .fourth {
 	height: 90vh;
+	overflow: hidden;
 	/*margin-bottom: 10rem;*/
+}
+
+.fourth img {
+	width: 120vw;
+	height: 120vh;
+	top: -20%;
+	transform: translate(0);
 }
 
 .sixth {
