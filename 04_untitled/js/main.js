@@ -2,11 +2,7 @@ $(function() {
 	$(window).scroll(function(){
 		winH = $(window).height()
 		winScr = $(window).scrollTop()
-		// if(winScr>0){
-		// 	$('.header').addClass('scrolled')
-		// } else {
-		// 	$('.header').removeClass('scrolled')
-		// }
+
 		var sliderBlock = $('.sec').offset().top + winH
 		if (winScr >= sliderBlock) {
 			$('.third .img .block').css('left','-105%')
@@ -23,11 +19,5 @@ $(function() {
 
 		var sliderHeight = 50 + (50 * (winScr / $('.full').height()))
 		$('.one .vertical-align').css('top', sliderHeight + '%')
-
 	});
-
 })
-
-// (1-($(window).scrollTop()/$(window).height()))*1.3
-
-// ($(window).scrollTop() / $('.full').height())

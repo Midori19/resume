@@ -104,6 +104,8 @@ body {
 		height: 34px;
 		border: solid 3px #FFF;
 		border-radius: 12px;
+		margin: 0 auto;
+		box-sizing: content-box;
 	}
 
 	.mouse-wrap::before {

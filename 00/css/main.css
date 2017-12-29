@@ -18,7 +18,7 @@ body {
 	font-size: 15px;
 	line-height: 28px;
 	letter-spacing: 1px;
-	font-family: "微軟正黑體", sans-serif;
+	font-family: "Belleza", "微軟正黑體", sans-serif;
 }
 
 ul {
@@ -44,13 +44,6 @@ h2:after {
 	height: 5px;
 	margin-left: 10px;
 	background-color: #457081;
-}
-
-h4 {
-	margin: 0;
-	margin-top: 40px;
-	opacity: 0.8;
-	font-weight: 400;
 }
 
 a {
@@ -90,6 +83,15 @@ hr {
 	border-right: solid 2px #457081;
 }
 
+.baseline:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 5px;
+	margin-right: 10px;
+	background-color: #457081;
+}
+
 .listSkill {
 	display: flex;
 	flex-wrap: wrap;
@@ -122,7 +124,7 @@ hr {
 	top: 50%;
 	transform: translate(-50%, -50%);
 }
-.listSkill li .circle .p90, .listSkill li .circle .p150, .listSkill li .circle .p180, .listSkill li .circle .p270, .listSkill li .circle .p330 {
+.listSkill li .circle .p90, .listSkill li .circle .p135, .listSkill li .circle .p180, .listSkill li .circle .p270, .listSkill li .circle .p325 {
 	width: 50%;
 	height: 50%;
 	position: absolute;
@@ -130,7 +132,7 @@ hr {
 	top: 0;
 	background-color: #457081;
 }
-.listSkill li .circle .p150 {
+.listSkill li .circle .p135 {
 	left: 75%;
 	top: 25%;
 	transform: rotateZ(30deg);
@@ -146,7 +148,7 @@ hr {
 	left: 0;
 	top: 0;
 }
-.listSkill li .circle .p330 {
+.listSkill li .circle .p325 {
 	left: -25%;
 	top: 25%;
 	transform: rotateZ(30deg);
@@ -178,7 +180,8 @@ hr {
 }
 
 .worksFig p {
-	font-size: 12px;
+	font-size: 14px;
+	font-weight: 900;
 	color: rgba(0,0,0,0.9);
 	text-align: center;
 	line-height: initial;
@@ -215,7 +218,7 @@ hr {
 }
 
 .worksWrap:hover .worksFigInner:after {
-	transform: translateX(10px) translateY(10px);
+	transform: translateX(15px) translateY(15px);
 }
 
 .worksContents:nth-child(1) .worksWrap .worksFig .worksFigInner .worksImg {
@@ -263,8 +266,14 @@ hr {
 	.resume {
 		padding: 25px;
 	}
+	.worksFig p {
+		font-size: 18px;
+	}
 	.worksContents .worksWrap {
 		margin-left: 0px;
 		min-width: 100%;
+	}
+	.worksWrap:hover .worksFigInner:after {
+		transform: translateX(20px) translateY(20px);
 	}
 }
