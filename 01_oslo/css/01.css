@@ -164,15 +164,15 @@ html, body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	z-index: 99999999;
 }
 
 #footer p {
 	font-weight: 700;
 	color: rgba(0,0,0,0.6);
-	padding: 0em 2em 0em 2em;
+	padding-right: 1em;
 	line-height: 30px;
 }
+
 
 /* bottom btn */
 .wrapper {

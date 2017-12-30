@@ -357,7 +357,6 @@ body {
         font-size: 3rem;
         color: rgba(255,255,255,0.9);
     }
-    
     .footer .content {
         position: absolute;
         bottom: 5%;
@@ -365,16 +364,15 @@ body {
         font-size: 1rem;
     }
 
-
-/*.loadPage {
-    width: 0;
-    height: 0;
-    position: absolute;
-    transition: ease-in-out .5s;
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
-*/
 
-/* loadingpage */
 .loadPage{
     background-color: #2B3134;
     width: 100%;
@@ -391,15 +389,13 @@ body {
     transition: ease-in .6s;
 }
     .loader {
-        margin: 0 0 2em;
+        border: 5px solid rgba(255,255,255,0);
+        border-radius: 50%;
+        width: 50px;
         height: 50px;
-        width: 20%;
-        text-align: center;
-        padding: 1em;
-        margin: 0 auto 1em;
+        animation: spin .8s linear infinite;
         display: inline-block;
-        vertical-align: top;
     }
-        svg path, svg rect {
-            fill: #71ABDB;
-        }
+    .loader.blue {
+        border-top: 5px solid #71ABDB;
+    }
