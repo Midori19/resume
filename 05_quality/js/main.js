@@ -8,7 +8,7 @@ $(function(e) {
         		var twoStr = '<option value="' + data[i].SiteName + '">' + data[i].SiteName + '</option>'
         		$('#county').append(twoStr)
 
-                var pm25 = data[i].SiteName+' PM2.5 濃度：'+data[i]["PM2.5"]
+                var pm25 = data[i].SiteName+' PM2.5 濃度：'+data[i]["PM2.5"]+'<br>空氣品質指標(AQI)為 ' + data[i].AQI
                 var str = '<li>'+ data[i].SiteName + '<div class="block">'+pm25+'</div></li>'
 				var quality = data[i].AQI
 				if (quality <= 50) {

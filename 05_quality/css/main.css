@@ -289,14 +289,9 @@ td {
     padding: 0 .5rem;
     line-height: initial;
 }
-
 tr td:nth-child(1) {
     border: 0;
     font-size: 12px;
-}
-table.tableTwo {
-    position: absolute;
-    left: -3rem;
 }
 tr:nth-child(3) td:nth-child(1) {
     width: 15%;
