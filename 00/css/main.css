@@ -237,6 +237,10 @@ hr {
 	background-image: linear-gradient(to right, #0086BE 0%, #73BDDB 100%)
 }
 
+.worksFigInner.colorGray:after {
+	background-image: linear-gradient(to right, #AAA 0%, #EEE 100%)
+}
+
 @media screen and (max-width: 1170px) {
 	.resume {
 		width: 1170px;

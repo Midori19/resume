@@ -60,19 +60,19 @@ body {
 }
 .update {
     position: absolute;
-    top: 1rem;
-    right: 1.5rem;
+    bottom: 1rem;
     color: white;
+    text-align: center;
+    
 }
 .update p {
     margin: 0;
+    color: rgba(0,0,0,.8);
 }
 .one {
-    /*flex: 5;*/
     width: 60%;
 }
 .two {
-    /*flex: 5;*/
     width: 60%;
 }
 .one h2 {
@@ -120,11 +120,11 @@ body {
     -ms-align-items: center;
     align-items: center;
     flex-flow: column;
-    height: 200px;
+    height: 300px;
 }
 .two .wrap {
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     position: absolute;
     bottom: 0;
     width: 100%;
