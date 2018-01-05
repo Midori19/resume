@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>空氣品質指標</title>
+    <link rel="shortcut icon" href="../trans32.png">
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <header class="header">
+        <h1>空氣品質指標</h1>
+        <p>空氣品質指標為依據監測資料將當日空氣中臭氧(O3)、細懸浮微粒(PM2.5)、懸浮微粒(PM10)、一氧化碳(CO)、二氧化硫(SO2)及二氧化氮(NO2)濃度等數值，以其對人體健康的影響程度，分別換算出不同污染物之副指標值，再以當日各副指標之最大值為該測站當日之空氣品質指標值(AQI)。</p>
+    </header>
+    <div class="update"></div>
+    <div class="one">
+		<h2>空氣品質良好地區</h2>
+		<ul class="good"></ul>
+
+		<h2>空氣品質普通地區</h2>
+		<ul class="moderate"></ul>
+
+		<h2>空氣品質指標達到橘標程度地區</h2>
+		<ul class="sensitive"></ul>
+
+		<h2>空氣品質指標達到紅標程度地區</h2>
+		<ul class="unhealthy"></ul>
+
+		<h2>空氣品質指標達到紫標程度地區</h2>
+		<ul class="vUnhealthy"></ul>
+	</div>
+	<hr style="margin-top: 5rem">
+	<div class="two">
+		<div id="list"></div>
+		<div class="wrap">
+			<select id="county"></select>
+			<input type="button" value="搜尋" class="search">
+		</div>
+	</div>
+
+	<div class="menuFixed">
+        <div class="menuCover">
+            <div class="menuContent">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>綠標</td>
+                        <td>黃標</td>
+                        <td>橘標</td>
+                        <td>紅標</td>
+                        <td>紫標</td>
+                        <!-- <td title="危害"></td> -->
+                    </tr>
+                    <tr>
+                        <td>PM2.5(μg/m3)<br>24小時平均值</td>
+                        <td>0.0 - 15.4</td>
+                        <td>15.5 - 35.4</td>
+                        <td>35.5 - 54.4</td>
+                        <td>54.5 - 150.4</td>
+                        <td>150.5 - 249.4</td>
+                        <!-- <td>250.5 - 500.4</td> -->
+                    </tr>
+                </table>
+                <br>
+                <table class="tableTwo">
+                    <tr>
+                        <td></td>
+                        <td>綠標</td>
+                        <td>黃標</td>
+                        <td>橘標</td>
+                        <td>紅標</td>
+                        <td>紫標</td>
+                    </tr>
+                    <tr>
+                        <td>一般民眾活動建議</td>
+                        <td>正常戶外活動。</td>
+                        <td>正常戶外活動。</td>
+                        <td>任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應該考慮減少戶外活動。</td>
+                        <td>任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應該考慮減少戶外活動。</td>
+                        <td>任何人如果有不適，如眼痛，咳嗽或喉嚨痛等，應減少體力消耗，特別是減少戶外活動。</td>
+                    </tr>
+                    <tr>
+                        <td>敏感性族群活動建議</td>
+                        <td>正常戶外活動。</td>
+                        <td>有心臟、呼吸道及心血管疾病的成人與孩童感受到徵狀時，應考慮減少體力消耗，特別是減少戶外活動。</td>
+                        <td>有心臟、呼吸道及心血管疾病的成人與孩童感受到徵狀時，應考慮減少體力消耗，特別是減少戶外活動。</td>
+                        <td>有心臟、呼吸道及心血管疾病的成人與孩童，應考慮減少體力消耗，特別是減少戶外活動。老人應減少體力消耗。具有氣喘的人可能需增加使用吸入劑頻率。</td>
+                        <td>有心臟、呼吸道及心血管疾病的成人與孩童，以及老人應避免體力消耗，特別是避免戶外活動。具有氣喘的人可能需增加使用吸入劑頻率。</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="menuIcon">
+            <div class="menuLine top"></div>
+            <div class="menuLine mid"></div>
+            <div class="menuLine bottom"></div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
