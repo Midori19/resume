@@ -1,6 +1,6 @@
 $(function(e) {
 	$.ajax({
-		url: 'http://opendata2.epa.gov.tw/AQI.json',
+		url: 'https://opendata2.epa.gov.tw/AQI.json',
         type: 'GET',
         success: function(data) {
             for (var i in data) {
@@ -39,7 +39,7 @@ $(function(e) {
 
         event.preventDefault()
         $.ajax({
-            url: 'http://opendata2.epa.gov.tw/AQI.json',
+            url: 'https://opendata2.epa.gov.tw/AQI.json',
             type: 'GET',
             success: function(data) {
                 // console.log(data[0]["PM2.5"])
