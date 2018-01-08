@@ -1,38 +1,3 @@
-$(window).scroll(function(evt){
-  if ($(window).scrollTop()>300) {
-    $(".navbar").removeClass("navbarTop");
-  } else {
-    $(".navbar").addClass("navbarTop")
-  }
-});
-
-///////////////////////////  bottom btn   ////////////////////////////////////
-
-var wrapperClick = 0;
-
-$(".wrapper").click(function(){
-    if ((wrapperClick%2)==0) {
-        wrapperClick++;
-        $(".wrapper").addClass("d");
-    } else {
-        wrapperClick++;
-        $(".wrapper").removeClass("d");
-    }
-});
-
-///////////////////////////  bottom btn end   ////////////////////////////////////
-
-
-$(window).scroll(function(evt){
-  if ($(window).scrollTop()>1300 && $(window).scrollTop()<2300) {
-    $(".left").removeClass("inactive");
-  } else {
-    $(".left").addClass("inactive")
-  }
-});
-
-////////////////////////////////////////////////////////////////////////////////
-
 $(document).ready(function() {
   if (($(window).width() < 1280)) { // < 1260
     // $(window).resize(function() {
@@ -51,9 +16,36 @@ $(document).ready(function() {
   }
 })
 
-var getRes = $(window).resize()
+$(window).scroll(function(evt){
+  if ($(window).scrollTop()>300) {
+    $(".navbar").removeClass("navbarTop");
+  } else {
+    $(".navbar").addClass("navbarTop")
+  }
+});
 
-////////////////////////////////////////////////////////////////////////////////
+var wrapperClick = 0;
+
+$(".wrapper").click(function(){
+    if ((wrapperClick%2)==0) {
+        wrapperClick++;
+        $(".wrapper").addClass("d");
+    } else {
+        wrapperClick++;
+        $(".wrapper").removeClass("d");
+    }
+});
+
+$(window).scroll(function(evt){
+  if ($(window).scrollTop()>1300 && $(window).scrollTop()<2300) {
+    $(".left").removeClass("inactive");
+  } else {
+    $(".left").addClass("inactive")
+  }
+});
+
+
+var getRes = $(window).resize()
 
 $("#home").on("click", function(evt){
   $('html, body').animate({
