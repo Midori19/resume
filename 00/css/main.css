@@ -65,6 +65,9 @@ hr {
 	padding: 50px;
 	position: relative;
 }
+.resume-a {
+	color: black;
+}
 
 .left {
 	flex: 5;

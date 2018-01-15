@@ -14,13 +14,13 @@ $('#header .caption').hover(function() {
 // 文字特效
 $('#header #storeName').each(function(index,val){
     var tt = $(val).text()
-    var allhtml=""
-    var mpos={x: screen.width/2,y: screen.height/2}
+    var allhtml = ""
+    var mpos = { x: screen.width/2,y: screen.height/2 }
 
-    for(var i=0;i<tt.length;i++)
+    for(var i=0; i<tt.length; i++)
         allhtml+="<span class='spc' id='sc"+i+"'>"+tt[i]+"</span>"
     $(val).html(allhtml)
-    for(var i=0;i<tt.length;i++){
+    for(var i=0; i<tt.length; i++){
         $("#sc"+i).css({
             "bottom": (Math.random()*100+50),
             "opacity":0,
@@ -29,7 +29,7 @@ $('#header #storeName').each(function(index,val){
         })
     }
     setTimeout(function(){
-        for(var i=0;i<tt.length;i++)
+        for(var i=0; i<tt.length; i++)
             $("#sc"+i).css({
                 "bottom":"0px",
                 "opacity":"1",
@@ -38,7 +38,7 @@ $('#header #storeName').each(function(index,val){
     },10)
 
     setTimeout(function(){
-        for(var i=0;i<tt.length;i++)
+        for(var i=0; i<tt.length; i++)
             $("#sc"+i).css({
                 "left": (100-Math.random()*200)+"px",
                 "bottom": (100-Math.random()*200)+"px",
