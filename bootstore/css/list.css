@@ -1,0 +1,112 @@
+@charset "UTF-8";
+* {
+  font-family: "Orbitron", "微軟正黑體", sans-serif;
+  position: relative;
+}
+
+.buyListWrap {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1FADC5;
+  position: fixed;
+  opacity: 0;
+  transition: ease-in-out 1.3s;
+  /*transition-delay: ease-in-out 1.3s;*/
+}
+
+.buyListWrap {
+  padding: 20px 0;
+}
+
+#buyList {
+  display: inline-block;
+  padding: 20px;
+  border: solid 4px #555;
+  background: #F3F3F3;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+}
+
+#buyList h1 {
+  padding: 20px;
+  margin: -20px;
+  margin-bottom: 20px;
+  border-bottom: solid 4px #555;
+  background: #F29111;
+  color: #F3F3F3;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#itemList {
+  margin-top: 10px;
+}
+
+.buyItem {
+  padding: 5px;
+  list-style: none;
+  border: solid 3px #555;
+  margin-top: 10px;
+  font-weight: 900;
+}
+.buyItem input {
+  width: 100px;
+  border: solid 3px #555;
+  padding: 2px;
+  padding-right: 5px;
+  text-align: right;
+}
+.buyItem .price {
+  display: inline-block;
+  position: absolute;
+  padding-left: 8px;
+  padding-right: 8px;
+  right: 50px;
+  background-color: #1FADC5;
+}
+.buyItem .price::after {
+  content: " $";
+}
+.buyItem .delBtn {
+  display: inline-block;
+  position: absolute;
+  padding: 0px 6px;
+  right: 10px;
+  cursor: pointer;
+}
+.buyItem .delBtn:hover {
+  background: #FF3D4A;
+  color: white;
+}
+.buyItem .addBtn {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  border: solid 3px #555;
+}
+.buyItem .addBtn:hover {
+  background: #FF3D4A;
+  color: white;
+}
+
+.total {
+  background-color: #F29111;
+  color: #F3F3F3;
+  font-weight: 900;
+}
+.total .price {
+  background-color: transparent;
+}
+
+.total {
+  margin-top: 25px;
+  margin-bottom: -10px;
+}
+
+.controlPanel {
+  padding: 15px 15px 14px 15px;
+  margin-bottom: 25px;
+}

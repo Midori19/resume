@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>08_Bookstore</title>
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Acme|Orbitron:400,700" rel="stylesheet'>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!-- <div class="reduction"><span>^</span></div> -->
+
+    <header id="header">
+        <div id="storeName">生命正值春光</div>
+        <div class="Home caption">BOOK STORE</div>
+        <a href="#"><div class="buylist caption">SHOPPING LIST</div></a>
+        <!-- <div class="about caption">ABOUT STORE</div> -->
+        <a href="contact.html"><div class="contact caption">CONTACT</div></a>
+    </header>
+
+    <div class="banner"></div>
+    
+    <div class="buyListWrap">
+        <div id="buyList">
+            <h1>Shopping List</h1>
+            <div class="buyItem controlPanel">
+                <label>產品</label>
+                <input id="inputName" placeholder="名稱"/>
+                <label>價錢</label>
+                <input id="inputPrice" placeholder="? ? ?"/><span class="addBtn">ADD</span>
+            </div>
+            <div id="itemList"></div>
+        </div>
+        <div class="reduction"><span>^</span></div>
+    </div>
+
+    <div class="container">
+        <div class="wrap" data-price="340" data-name="山茶花文具店"><img src="images/03.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="220" data-name="異鄉人"><img src="images/04.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="240" data-name="麥田捕手"><img src="images/05.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="350" data-name="解憂雜貨店"><img src="images/02.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="350" data-name="長日將盡"><img src="images/01.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="699" data-name="阿特啦斯聳聳肩/源泉"><img src="images/06.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="920" data-name="刺殺騎士團長"><img src="images/07.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="369" data-name="向田理髮店"><img src="images/08.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+        <div class="wrap" data-price="400" data-name="年輕人們"><img src="images/09.jpg" alt=""><div class="add">已加入購物車</div><div class="hit">加入購物清單</div></div>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script  src="js/list.js"></script>
+    <script  src="js/main.js"></script>
+</body>
+</html>

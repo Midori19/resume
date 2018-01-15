@@ -1,0 +1,85 @@
+@import 'reset.css';
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 50vh;
+}
+
+.home {
+    font-family: 'Acme';
+    position: absolute;
+    cursor: pointer;
+    color: rgba(0,0,0,.8);
+    top: 0;
+    padding: 1rem;
+    transition: ease-out .3s;
+}
+.home:hover {
+    top: -5px;
+}
+.header {
+    font-family: 'Acme';
+    width: 100%;
+    height: 10vh;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(0,0,0,.8);
+    margin: 2rem 0;
+}
+.contact {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.contact .row {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+
+}
+.contact .row .left, .contact .row .right {
+    flex: 5;
+    position: relative;
+}
+.contact .row .left div {
+    width: 60%;
+    margin: 1rem auto;
+}
+.contact .row .right .form-group {
+    margin: 10px auto;
+}
+.contact .row .right input, textarea {
+    font-family: 'Acme';
+    border-radius: 20px 20px 20px 0;
+    border: solid 1px rgba(0,0,0,.5);
+    padding: 10px;
+}
+.contact .row p, .contact h2 {
+    font-family: 'Acme';  
+    letter-spacing: .05rem;
+    font-size: 1.5rem;
+}
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+.contact button {
+    font-family: 'Acme';  
+    background-color: #FFF !important;
+    border: solid 1px rgba(0,0,0,.5);
+    color: rgba(0,0,0,.7);
+}
