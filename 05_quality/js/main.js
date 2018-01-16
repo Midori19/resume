@@ -1,5 +1,5 @@
 var jsonData
-var dataUrl = 'https://midori19.github.io/resume/05_quality/command.php'
+var dataUrl = 'http://shinkai.ga/command.php'
 $.ajax({
     url: dataUrl,
     success: function(res) {
