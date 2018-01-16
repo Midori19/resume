@@ -3,7 +3,6 @@ var dataUrl = 'https://midori19.github.io/resume/05_quality/command.php'
 $.ajax({
     url: dataUrl,
     success: function(res) {
-        // jsonData = JSON.parse(res)
         console.log(res)
     }
 })
