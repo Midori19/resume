@@ -1,13 +1,14 @@
-$(function(e) {
-    var dataUrl = 'https://midori19.github.io/resume/05_quality/command.php'
-    $.ajax({
-        url: dataUrl,
-        success: function(res) {
-            jsonData = JSON.parse(res)
-            console.log(jsonData)
-        }
-    })
+var jsonData
+var dataUrl = 'https://midori19.github.io/resume/05_quality/command.php'
+$.ajax({
+    url: dataUrl,
+    success: function(res) {
+        // jsonData = JSON.parse(res)
+        console.log(res)
+    }
+})
 
+$(function(e) {
 	$.ajax({
 		url: 'http://opendata2.epa.gov.tw/AQI.json',
         type: 'GET',
