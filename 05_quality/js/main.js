@@ -1,5 +1,5 @@
 var jsonData
-var dataUrl = 'http://shinkai.ga/command.php'
+var dataUrl = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=rdec-key-123-45678-011121314'
 $.ajax({
     url: dataUrl,
     success: function(res) {
