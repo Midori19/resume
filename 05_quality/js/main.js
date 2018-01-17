@@ -1,12 +1,3 @@
-// var jsonData
-// var dataUrl = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=rdec-key-123-45678-011121314'
-// $.ajax({
-//     url: dataUrl,
-//     success: function(res) {
-//         console.log(res)
-//     }
-// })
-
 $(function(e) {
 	$.ajax({
 		url: 'http://opendata2.epa.gov.tw/AQI.json',
@@ -16,7 +7,7 @@ $(function(e) {
                 // 把值撈出來放在 select
         		var twoStr = '<option value="' + data[i].SiteName + '">' + data[i].SiteName + '</option>'
         		$('#county').append(twoStr)
-
+                // .one
                 var pm25 = data[i].SiteName+' PM2.5 濃度：'+data[i]["PM2.5"]+'<br>空氣品質指標(AQI)為 ' + data[i].AQI
                 var str = '<li>'+ data[i].SiteName + '<div class="block">'+pm25+'</div></li>'
 				var quality = data[i].AQI
