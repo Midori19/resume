@@ -14,21 +14,6 @@
         <h1>空氣品質指標</h1>
         <p>空氣品質指標為依據監測資料將當日空氣中臭氧(O3)、細懸浮微粒(PM2.5)、懸浮微粒(PM10)、一氧化碳(CO)、二氧化硫(SO2)及二氧化氮(NO2)濃度等數值，以其對人體健康的影響程度，分別換算出不同污染物之副指標值，再以當日各副指標之最大值為該測站當日之空氣品質指標值(AQI)。</p>
     </header>
-    <script>
-        var openData
-        var getData
-        openData = new XMLHttpRequest()
-        openData.open('get','http://opendata2.epa.gov.tw/AQI.json',true)
-        openData.send(null)
-
-        openData.onload = function() {
-            getData = openData.responseText
-
-            console.log(JSON.parse(getData))
-        }
-        
-    </script>
-
     <div class="one">
 		<h2>空氣品質良好地區</h2>
 		<ul class="good"></ul>
