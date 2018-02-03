@@ -20,7 +20,5 @@ $(function() {
 
 		var moveImg = -150 + (80 * (winScr / $(window).height()))
 		$('.fourth img').css('transform', 'translate(-' + moveImg + 'px)')
-
-
 	});
 })
